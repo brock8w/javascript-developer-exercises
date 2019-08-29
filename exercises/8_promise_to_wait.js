@@ -1,7 +1,7 @@
 // The wait function returns a promise that will resolve after
 // the specified number of seconds has passed
-const wait = function(seconds) {
-  return new Promise(function(resolve, reject) {
+const wait = function (seconds) {
+  return new Promise(function (resolve, reject) {
     setTimeout(resolve, 1000 * seconds)
   })
 }
@@ -16,6 +16,14 @@ to the console, waits 3 more seconds and then writes
 console.log('Go!')
 
 // PLACE YOUR CODE BELOW
+
+wait(1)
+  .then(() => {
+    console.log('I waited 1 second')
+    wait(3).then(() => {
+      console.log('I waited 3 more seconds')
+    })
+  })
 
 // PLACE YOUR CODE ABOVE
 /*

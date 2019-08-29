@@ -2,10 +2,14 @@ const assert = require('assert')
 
 const numberList = [3, 7, 8, 19, 18, 11, 17, 4, 14, 5]
 
-let totalOfOddNumbers = numberList.reduce(function(accumulator, currentValue) {
+let totalOfOddNumbers = numberList.reduce(function (accumulator, currentValue) {
   // Code this reducer function so that the result is the sum
   // of only the odd values (3, 7, 19, etc). Do not alter any other code.
   // PLACE YOUR CODE BELOW
+
+  return (currentValue % 2 !== 0)
+    ? accumulator + currentValue
+    : accumulator
 
   // PLACE YOUR CODE ABOVE
 }, 0)

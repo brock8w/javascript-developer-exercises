@@ -5,9 +5,14 @@ Implement the below code so that createGetFunction returns a function.  That ret
 function should accept an array and return whichever element was specified by the
 parameter passed to createGetFunction when it was called.
 */
-function createGetFunction(elementToReturn) {
+function createGetFunction (elementToReturn) {
   // PLACE YOUR CODE BELOW
 
+  let index = elementToReturn
+
+  return function (elements) {
+    return elements[index - 1]
+  }
 
   // PLACE YOUR CODE ABOVE
 }

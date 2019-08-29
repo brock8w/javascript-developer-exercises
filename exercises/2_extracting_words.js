@@ -22,6 +22,9 @@ before the next comment block.
 */
 // PLACE YOUR CODE BELOW
 
+let list = words.map(word => `${word.charAt(1)}${word.charAt(2)}`)
+wordList = list.join(', ')
+
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 2_extracting_words.js" you should see the following on

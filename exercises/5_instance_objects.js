@@ -1,8 +1,8 @@
 class Tank {
-  attack() {
+  attack () {
     console.log(`Tank attacks for ${this.power()} damage!`)
   }
-  power() {
+  power () {
     return 3
   }
 }
@@ -14,6 +14,8 @@ const tanks = [
 
 // On a single line, make all tanks attack for 7 instead of 3.
 // PLACE YOUR CODE BELOW
+
+Tank.prototype.power = () => 7
 
 // PLACE YOUR CODE ABOVE
 // You are only allowed to write one line of code above.  Do not alter any other lines of code.

@@ -7,10 +7,14 @@ let assert = require('assert')
 
 let statement = 'Penn Mutual sells life insurance'
 
-function reverseLetters(str) {
+function reverseLetters (str) {
   // PLACE YOUR CODE BELOW
 
+  let newWords = str.split(' ').map(word => {
+    return word.split('').reverse().join('')
+  })
 
+  return newWords.join(' ')
   // PLACE YOUR CODE ABOVE
 }
 
